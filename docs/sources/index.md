@@ -5,6 +5,7 @@ The following is a list of Triggermesh event Sources, some available as open sou
 ## Current TriggerMesh Sources
 
 * [Azure Activity Logs](./azureactivitylogs.md): Consume Activity Logs from a given Azure Subscription.
+* [Zendesk](./zendesk.md): Source events from Zendesk, such as the creation of new tickets.
 
 <!---
 * [Azure Storage](./azurestorage.md):

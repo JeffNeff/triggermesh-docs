@@ -66,6 +66,87 @@ The Zendesk event source emits events of the following type:
 
 * `com.zendesk.ticket.created`
 
+An example event:
+
+```
+☁️  cloudevents.Event
+Validation: valid
+Context Attributes,
+  specversion: 1.0
+  type: com.zendesk.ticket.created
+  source: triggermesh.zendesksource-zd-pr-test
+  id: dfd81df4-ca65-4373-a733-ef6cdd417718
+  time: 2020-07-20T16:10:46.606148594Z
+  datacontenttype: application/json
+Data,
+  {
+    "current_user": {
+      "details": "",
+      "email": "dev@triggermesh.com",
+      "external_id": "",
+      "first_name": "Triggermesh",
+      "language": "English",
+      "name": "Triggermesh Developer",
+      "notes": "",
+      "organization": {
+        "details": "",
+        "name": "",
+        "notes": ""
+      },
+      "phone": ""
+    },
+    "satisfaction": {
+      "current_comment": "",
+      "current_rating": ""
+    },
+    "ticket": {
+      "account": "TriggerMesh",
+      "assignee": {
+        "email": "dev@triggermesh.com",
+        "first_name": "Triggermesh",
+        "last_name": "Developer",
+        "name": "Triggermesh Developer"
+      },
+      "brand_name": "TriggerMesh",
+      "cc_names": "",
+      "ccs": "[]",
+      "current_holiday_name": "Liquid error: internal",
+      "description": "----------------------------------------------\n\nTriggermesh Developer, Jul 20, 2020, 1:10 PM\n\nExample Ticket Body!",
+      "due_date": "",
+      "external_id": "",
+      "group_name": "Support",
+      "id": "87",
+      "organization": {
+        "details": "",
+        "external_id": "",
+        "name": "",
+        "notes": ""
+      },
+      "priority": "",
+      "requester": {
+        "details": "",
+        "email": "dev@triggermesh.com",
+        "external_id": "",
+        "field": "",
+        "first_name": "Triggermesh",
+        "language": "English",
+        "last_name": "Developer",
+        "name": "Triggermesh Developer",
+        "phone": ""
+      },
+      "status": "Open",
+      "tags": "",
+      "ticket_field_id": "",
+      "ticket_field_option_title_id": "",
+      "ticket_type": "Ticket",
+      "title": "Example Ticket Subject",
+      "url": "triggermesh.zendesk.com/agent/tickets/87",
+      "via": "Web Form"
+    }
+  }
+```
+
+
 [zd-token]: https://support.zendesk.com/hc/en-us/articles/226022787-Generating-a-new-API-token-
 [zd-target]: https://support.zendesk.com/hc/en-us/articles/203662136-Notifying-external-targets
 [zd-trigger]: https://support.zendesk.com/hc/en-us/articles/203662226-Triggers-resources

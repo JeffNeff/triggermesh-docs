@@ -60,6 +60,12 @@ condition is the creation of a new ticket.
 If the Trigger is marked as `active`, it will be sending notifications to the HTTP(S) endpoint exposed by the instance
 of the TriggerMesh Zendesk event source as soon as a corresponding action happens in Zendesk.
 
+## Event types
+
+The Zendesk event source emits events of the following type:
+
+* `com.zendesk.ticket.created`
+
 [zd-token]: https://support.zendesk.com/hc/en-us/articles/226022787-Generating-a-new-API-token-
 [zd-target]: https://support.zendesk.com/hc/en-us/articles/203662136-Notifying-external-targets
 [zd-trigger]: https://support.zendesk.com/hc/en-us/articles/203662226-Triggers-resources

@@ -19,7 +19,8 @@ In the Source creation form, give a name to the event source and add the followi
 
 * **Email**: Email address associated with the Zendesk account.
 * [**Subdomain**][zd-subdom]: Name of the Zendesk subdomain, without the `zendesk.com` domain or `https://` scheme.
-* [**Token**][zd-token]: API token to communicate with the Zendesk API, as described in the previous section.
+* [**Token**][zd-token]: Reference to a secret containing an API token to communicate with the Zendesk API, as described
+  in the previous section.
 * **Webhook username/password**: arbitrary user name and password, used to verify event callbacks.
 
 ![Zendesk source form](../images/zendesk-source/create-bridge-2.png)

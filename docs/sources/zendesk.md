@@ -37,7 +37,7 @@ successfully created and that the event source is ready to forward events from Z
 
 To verify the successful deployment of the Zendesk event source, navigate to the [Targets][zd-target] tab of the
 _Extensions_ screen in the Zendesk Admin interface, below the _Settings_ section. The event source instance should have
-created a Target following the naming pattern `io.triggermesh.zendesksource.<triggermesh user>.<source name>`.
+created a Target following the naming pattern `io.triggermesh.zendesksource.<user namespace>.<source name>`.
 
 ![Zendesk Target name](../images/zendesk-source/targets-1.png)
 

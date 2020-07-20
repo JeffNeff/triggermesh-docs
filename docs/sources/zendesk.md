@@ -35,6 +35,8 @@ successfully created and that the event source is ready to forward events from Z
 
 ![Bridge status](../images/awseventbridge-target/create-bridge-4.png)
 
+## Verification of external resources
+
 To verify the successful deployment of the Zendesk event source, navigate to the [Targets][zd-target] tab of the
 _Extensions_ screen in the Zendesk Admin interface, below the _Settings_ section. The event source instance should have
 created a Target following the naming pattern `io.triggermesh.zendesksource.<user namespace>.<source name>`.
@@ -54,6 +56,9 @@ The Trigger defines the condition on which a new event is generated and sent to 
 condition is the creation of a new ticket.
 
 ![Zendesk Trigger details](../images/zendesk-source/triggers-2.png)
+
+If the Trigger is marked as `active`, it will be sending notifications to the HTTP(S) endpoint exposed by the instance
+of the TriggerMesh Zendesk event source as soon as a corresponding action happens in Zendesk.
 
 [zd-token]: https://support.zendesk.com/hc/en-us/articles/226022787-Generating-a-new-API-token-
 [zd-target]: https://support.zendesk.com/hc/en-us/articles/203662136-Notifying-external-targets

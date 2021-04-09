@@ -13,9 +13,9 @@ Open the Bridge creation screen and add a Target of type `Google Cloud Storage`.
 
 In the Target creation form, provide a name for the event Target, and add the following information:
 
-* [**Secret**](https://cloud.google.com/iam/docs/creating-managing-service-account-keys): Service account key in JSON format, as described in the previous sections.
-* **Bucket Name** The Google Cloud Storage Bucket name.
-* **Credentials** Credentails for a Google Service Account in JSON format.
+* **Credentials:** Credentails for a Google Service Account in [JSON format](https://cloud.google.com/iam/docs/creating-managing-service-account-keys)).
+* **Name:** A name to be associated with the deployed Target.
+* **Bucket Name:** The Google Cloud Storage Bucket name.
 
 
 After clicking the `Save` button, you will be taken back to the Bridge editor. Proceed by adding the remaining components to the Bridge, and then submit it.
